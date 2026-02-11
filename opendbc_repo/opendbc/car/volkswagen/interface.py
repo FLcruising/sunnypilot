@@ -31,7 +31,7 @@ class CarInterface(CarInterfaceBase):
       else:
         ret.networkLocation = NetworkLocation.fwdCamera
 
-      ret.dashcamOnly = is_release  # Release support needs HCA timeout fix, safety validation
+      ret.dashcamOnly = False  # Release support needs HCA timeout fix, safety validation
 
     elif ret.flags & VolkswagenFlags.MLB:
       # Set global MLB parameters
